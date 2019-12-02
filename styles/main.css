@@ -141,9 +141,22 @@ ul:hover {
 
 /* ******************************* ABOUT  ********************************** */
 .about {
-  height: 800px;
+  height: 1100px;
   /* background-color: green; */
 
+}
+
+.blurb-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin:auto;
+}
+
+.profile-pic {
+  border: 2px solid pink;
+  width: 30%;
+  border-radius: 250px;;
 }
 
 .blurb {
@@ -162,12 +175,25 @@ ul:hover {
   font-family: 'Playfair Display','serif';
   font-size: 50px;
   /* letter-spacing: 1.5px; */
-  margin: 37px;
+  margin: 62px;
+  margin-bottom: 20px;
+
+}
+
+.subheading-skills {
+  font-family: 'Playfair Display','serif';
+  font-size: 50px;
+  /* letter-spacing: 1.5px; */
+  margin: 0;
+  padding: 0;
+  margin-right: 82px;
+  margin-bottom: 50px;
+
 
 }
 
 .skill-box {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 5px;;
   padding: 2px;
   display: flex;
@@ -187,9 +213,18 @@ ul:hover {
 
 .spanish {
   background-image: url('../assets/spain-flag.png');
-  background-size: 122px 122px;;
+  background-size: 115px 115px;;
   /* background-size: contain; */
   background-repeat: no-repeat;
+  
+
+}
+.brit {
+  background-image: url('../assets/british-flag-icon-2.jpg');
+  background-size: 115px 115px;;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  
 
 }
 
@@ -199,20 +234,22 @@ ul:hover {
 .skill-box.lang {
   width: 130px;
   height: 120px;
-  font-size: 110px;;
+  font-size: 107px;
+  border: none;
+  margin: 25px;
 
 }
 
 
 .skill-box:hover {
-  transform: scale(1.1);
+  transform: scale(1.19);
 
 }
 
 
 /* ***************************  PROJECTS  *************************************** */
 .projects {
-  height: 1500px;
+  height: 1700px;
   background-color:white;
   display: flex;
   flex-direction: column;
@@ -238,9 +275,24 @@ ul:hover {
 
 .project-name {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-family: 'Playfair Display','serif'; */
   text-align: center;
   font-size: 32px;
   margin:0;
+}
+
+.team {
+  color:#05E5C8;
+  text-align: center;
+  font-weight:800;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.duration {
+  text-align: center;
+  margin: 0;
+
 }
 
 
@@ -248,10 +300,13 @@ ul:hover {
 .project {
   display: flex;
   flex-direction: row;
+  margin:auto;
   font-family: 'Montserrat', sans-serif;
   width: 75%;
   justify-content: center;
-  margin: auto;
+  margin-top: 90px;
+  
+
 
 
 }
@@ -360,6 +415,14 @@ p {
   margin-right: 0px;
 }
 
+.bold {
+  color:#05E5C8;
+  /* font-weight: 800; */
+  font-family: 'Impact';
+  letter-spacing: 0.5px;;
+  font-size: 18px;
+}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -414,7 +477,7 @@ p {
 }
 
 .my-journey {
-  height: 900px;
+  height:1700px;
   background-color: #fefbed;
   /* background-color: purple; */
 
@@ -456,6 +519,7 @@ p {
   width: 70%;
   margin: auto;
   color: black;
+  justify-content: center;
 }
 
 
