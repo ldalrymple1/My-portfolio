@@ -14,11 +14,10 @@
   </head>
   <body>
     <nav>
-      <ul>About Me</ul>
-      <ul>Projects</ul>
-      <ul>My journey</ul>
-      <ul>Interests</ul>
-      <ul>Contact</ul>
+      <a href="#about"><ul>about me</ul> </a>
+      <a href="#projects"><ul>projects</ul> </a>
+      <a href="#journey"><ul>my journey</ul> </a>
+      <a href="#contact"><ul>contact</ul></a>
     </nav>
 
     <!-- HOME PAGE -->
@@ -30,12 +29,15 @@
           <div class="typewriter">
               <h3>I am a Junior Software Engineer...</h3>
           </div>
-          <i class="fas fa-chevron-down animated pulse"></i> 
+          <a href="#chevron">
+              <i class="fas fa-chevron-down"></i> 
+          </a>
+          
           <!-- add infinite to animation -->
     </section>
 
     <!-- ABOUT ME  -->
-    <section class="about">
+    <section class="about" id="chevron">
       <div class="blurb-wrapper">
           <p class="blurb">While studying Modern Languages at university, I became particularly interested in the logic and
               structure of language. Determined to pursue this interest further, I enrolled on the Software
@@ -52,24 +54,24 @@
         <div class="skill-box"><i class="devicon-bootstrap-plain-wordmark"></i></div>
         <div class="skill-box"><i class="devicon-chrome-plain-wordmark"></i></div>
         <div class="skill-box"><i class="devicon-css3-plain-wordmark"></i></div>
-        <div class="skill-box"><i class="devicon-django-plain colored"></i></div>
-        <div class="skill-box"><i class="devicon-express-original-wordmark colored"></i></div>
-        <div class="skill-box"><i class="devicon-git-plain-wordmark colored"></i></div>
-        <div class="skill-box"><i class="devicon-github-plain-wordmark colored"></i></div>
-        <div class="skill-box"><i class="devicon-heroku-original-wordmark colored"></i></div>
-        <div class="skill-box"><i class="devicon-html5-plain-wordmark colored"></i></div>
-        <div class="skill-box"><i class="devicon-javascript-plain colored"></i></div>
-        <div class="skill-box"><i class="devicon-mocha-plain colored"></i></div>
-        <div class="skill-box"><i class="devicon-mongodb-plain-wordmark colored"></i></div>
-        <div class="skill-box"><i class="devicon-nodejs-plain colored"></i></div>
-        <div class="skill-box"><i class="devicon-postgresql-plain-wordmark colored"></i></div>
-        <div class="skill-box"><i class="devicon-python-plain-wordmark colored"></i></div>
-        <div class="skill-box"><i class="devicon-react-original-wordmark colored"></i></div>
-        <div class="skill-box"><i class="devicon-sass-original colored"></i></div>
-        <div class="skill-box"><i class="devicon-slack-plain colored"></i></div>
-        <div class="skill-box"><i class="devicon-trello-plain colored"></i></div>
-        <div class="skill-box"><i class="devicon-visualstudio-plain colored"></i></div>
-        <div class="skill-box"><i class="devicon-atom-original-wordmark colored"></i></div>
+        <div class="skill-box"><i class="devicon-django-plain"></i></div>
+        <div class="skill-box"><i class="devicon-express-original-wordmark"></i></div>
+        <div class="skill-box"><i class="devicon-git-plain-wordmark"></i></div>
+        <div class="skill-box"><i class="devicon-github-plain-wordmark"></i></div>
+        <div class="skill-box"><i class="devicon-heroku-original-wordmark"></i></div>
+        <div class="skill-box"><i class="devicon-html5-plain-wordmark"></i></div>
+        <div class="skill-box"><i class="devicon-javascript-plain"></i></div>
+        <div class="skill-box"><i class="devicon-mocha-plain"></i></div>
+        <div class="skill-box"><i class="devicon-mongodb-plain-wordmark"></i></div>
+        <div class="skill-box"><i class="devicon-nodejs-plain"></i></div>
+        <div class="skill-box"><i class="devicon-postgresql-plain-wordmark"></i></div>
+        <div class="skill-box"><i class="devicon-python-plain-wordmark"></i></div>
+        <div class="skill-box"><i class="devicon-react-original-wordmark"></i></div>
+        <div class="skill-box"><i class="devicon-sass-original"></i></div>
+        <div class="skill-box"><i class="devicon-slack-plain"></i></div>
+        <div class="skill-box"><i class="devicon-trello-plain"></i></div>
+        <div class="skill-box"><i class="devicon-visualstudio-plain"></i></div>
+        <div class="skill-box"><i class="devicon-atom-original-wordmark"></i></div>
 
 
 
@@ -80,37 +82,44 @@
 
 
     <!-- PROJECTS -->
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="projects-heading">
         <h1 class="subheading">my projects</h1>
     </div>
 
-    <div class="project4">
-        <img src='./assets/proj4.png' alt='project4' class="project-pics" />
+    <div class="project">
+        <img src='./assets/proj4.png' alt='project4' class="project-pics4" />
         <div class="text">
+            <h3 class="project-name">EXPOSURE</h3>
+
             <p>Determined to stretch myself, I built a Full-Stack application which was rooted in a Python and PostgreSQL back-end. Aimed at art enthusiasts, it allows users to browse upcoming art exhibitions in London. This was my first project working with Python and I was really satisfied with the finished product. Users can view the exhibitions in a traditional card view and map view; however, in due course I plan to add calendar view as well as other features.</p>
         </div>
     </div>
 
-    <div class="project3">
+    <div class="project">
         <img src='./assets/proj3.png' alt='project3' class="project-pics" />
         <div class="text">
+          <h3 class="project-name">SKILLSWAP</h3>
 
         <p>We were given a week to build a Full Stack MERN application. With only one weeks tuition in node.js and Express, I undertook the challenge of being responsible for developing the back-end. As aspiring developers, we decided to build a skill-swapping, community-led platform for junior developers. We built our own RESTful API as well as using a third-party API. This project taught me the benefits of favouring refactoring and bug fixing to ensure readable and maintainable code, imperative when sharing codebases. </p>
           </div>
       </div>
 
-    <div class="project2">
+    <div class="project">
         <img src='./assets/proj2.png' alt='project2' class="project-pics" />
         <div class="text">
+            <h3 class="project-name">FLASH FILMS</h3>
 
-          <p>As a pair we were built a React.js app using a third-party API. My partner and I shared a mutual interest in film, so we decided to use the MovieDB to build a website to help users choose a film. Working against the clock with just a 48-hour deadline, this project highlighted the importance of outlining and achieving a minimum viable product (MVP). I really enjoyed working in a pair and learnt some invaluable techniques from my partner.</p>
+
+            <p>As a pair we were built a React.js app using a third-party API. My partner and I shared a mutual interest in film, so we decided to use the MovieDB to build a website to help users choose a film. Working against the clock with just a 48-hour deadline, this project highlighted the importance of outlining and achieving a minimum viable product (MVP). I really enjoyed working in a pair and learnt some invaluable techniques from my partner.</p>
           </div>
         </div>
 
-    <div class="project1">
+    <div class="project">
         <img src='./assets/proj1.png' alt='project1' class="project-pics" />
         <div class="text">
+            <h3 class="project-name">GET SHREKKED</h3>
+
 
         <p>I had one week to develop a grid-based game.  This was my first proper project using JavaScript. It proved to be a steep learning curve but it was a hugely satisfying experience and showed how much I had learnt in a short space of time. The end product was a Shrek themed version of the traditional game 'Frogger'.</p>
       </div>
@@ -131,8 +140,34 @@
 
     <!-- MY JOURNEY -->
 
-    <section class="my-journey">
+    <section class="my-journey" id="journey">
       <h1 class="subheading">my journey</h1>
+      <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>2017</h2>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>2016</h2>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="container left">
+              <div class="content">
+                <h2>2017</h2>
+                <p>Lorem ipsum..</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>2016</h2>
+                <p>Lorem ipsum..</p>
+              </div>
+            </div>
+        </div>
 
 
     </section>
@@ -140,13 +175,16 @@
 
 
     <!-- CONTACT -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact-heading">
           <h1 class="subheading">contact me</h1>
       </div>
 
 
     </section>
+    <footer>
+      <p>Made by Lydia Dalrymple {🐞}</p>
+    </footer>
 
 
     
