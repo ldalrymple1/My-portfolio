@@ -1,8 +1,10 @@
 body {
+  /* background-image:url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?ixlib=rb-1.2.1&w=1000&q=80'); */
   /* background-image: url(https://static3.bigstockphoto.com/8/9/1/large1500/198973048.jpg); */
   /* background-image: url(https://st2.depositphotos.com/6703620/9567/i/950/depositphotos_95676446-stock-photo-green-golden-marbling-background.jpg); */
   display: flex;
   flex-direction: column;
+
 }
 html {
   margin:0
@@ -66,7 +68,7 @@ nav {
  height: 580px;
  /* background-image: url('./assets/green-marble.jpg'); */
  animation: pulse1 3s;
- background-color: pink;
+ background-color: white;
  display: flex;
  justify-content: center;
  flex-direction: column;
@@ -87,7 +89,7 @@ nav {
 
 /* ******************************* ABOUT  ********************************** */
 .about {
-  height: 600px;
+  height: 800px;
   /* background-color: green; */
 
 }
@@ -110,22 +112,56 @@ nav {
 
 .skill-box {
   border: 1px solid black;
-  margin: 3px;
   padding: 2px;
   display: flex;
   margin: auto;
+  margin: 10px;
+  transition: all .2s ease-in-out
+  /* transform: scale(0.95); */
+
+}
+
+.skill-box:hover {
+  transform: scale(1.1);
+
 }
 
 
 /* ***************************  PROJECTS  *************************************** */
 .projects {
-  height: 600px;
-  background-color: pink;
+  height: 1300px;
+  background-color:white;
 
 
 }
 
 .projects-heading {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-pics {
+  height: 300px;
+  width: 400px;
+
+}
+
+
+
+.project1, .project2, .project3, .project4  {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  width: 75%;
+  margin: auto;
+
+}
+
+
+
+
+/*  **************************** CONTACT ME   ************************************ */
+.contact-heading {
   display: flex;
   justify-content: flex-end;
 }
@@ -136,10 +172,10 @@ nav {
 
 @keyframes pulse1 {
   0% {
-    background-color: blue;
+    background-color:#05E5C8;
   }
   100% {
-    background-color: pink;
+    background-color: white;
   }
 }
 
