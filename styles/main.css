@@ -159,7 +159,7 @@ ul:hover {
 }
 
 .profile-pic {
-  border: 2px solid pink;
+  border: 2px solid #05E5C8;
   width: 30%;
   border-radius: 250px;;
 }
@@ -213,11 +213,12 @@ ul:hover {
   margin: 7px;
   transition: all .1s ease-in-out;
   padding: 5px;
+  color: #3e6a88;
   /* transform: scale(0.95); */
 
 }
 
-.french {
+/* .french {
   background-image: url('../assets/french-flag.png');
   background-size: 158px 115px;;
   background-repeat: no-repeat;
@@ -227,18 +228,17 @@ ul:hover {
   background-image: url('../assets/spain-flag.png');
   background-size: 115px 115px;;
   /* background-size: contain; */
-  background-repeat: no-repeat;
+  
   
 
-}
+/* }
 .brit {
   background-image: url('../assets/british-flag-icon-2.jpg');
   background-size: 115px 115px;;
   /* background-size: contain; */
-  background-repeat: no-repeat;
   
-
-}
+  
+/* } */
 
 
 
@@ -255,6 +255,7 @@ ul:hover {
 
 .skill-box:hover {
   transform: scale(1.19);
+  color: #05E5C8;
 
 }
 
@@ -535,19 +536,19 @@ p.info {
 
 
 
-@keyframes pulse1 {
+/* @keyframes pulse1 {
   0% {
     background-color:white;
   }
   100% {
     background-color: #fefbed;
   }
-}
+} */
 
 .my-journey {
   height:1500px;
-  background-color: #fefbed;
-  animation: pulse1 3s
+  /* background-color: #fefbed; */
+  background-color: white;
   /* background-color: purple; */
 
 }
@@ -581,7 +582,7 @@ p.info {
 /* DEV ICONS */
 
 .all-skills {
-  font-size: 70px;
+  font-size: 60px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -4237,4 +4238,6 @@ footer {
 
 
 
+
+/*  */
 
