@@ -35,6 +35,7 @@ ul:hover {
   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   transform: scale(1.1);
   color: #05E5C8;
+  font-weight: 400;
 }
 
 .box-for-text {
@@ -205,7 +206,7 @@ ul:hover {
 }
 
 .skill-box {
-  /* border: 1px solid black; */
+  /* border: 0.5px solid #3e6a88 ; */
   border-radius: 5px;;
   padding: 2px;
   display: flex;
@@ -246,10 +247,23 @@ ul:hover {
 .skill-box.lang {
   width: 130px;
   height: 120px;
-  font-size: 107px;
+  font-size: 104px;
   border: none;
   margin: 25px;
 
+}
+
+.flag {
+  height: 74px;
+  width: 74px;
+  -webkit-filter: grayscale(40%); 
+  filter: grayscale(40%)
+}
+
+.skill-box > img.flag:hover {
+  -webkit-filter: grayscale(50%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(50%); /* FF 35+ */
+  cursor: pointer;
 }
 
 
@@ -257,6 +271,16 @@ ul:hover {
   transform: scale(1.19);
   color: #05E5C8;
 
+}
+
+.devicon-javascript-plain {
+  font-size: 56px;
+  margin-top: 12px;
+
+}
+.devicon-python-plain-wordmark.lang {
+  font-size: 59px;
+  margin-top: 12px;
 }
 
 
@@ -337,8 +361,20 @@ ul:hover {
 
 }
 
+.tech-icon.card {
+  font-size: 70px;
+  display: inline;
+}
+
+.tech-icon.card:hover {
+  color: black;
+}
 
 
+.text {
+  width: 50%;
+  margin-left: 40px;
+}
 
 
 .project {
@@ -357,6 +393,52 @@ p.info {
 }
 
 
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #3e6a88;
+  background-color: #05E5C8;
+  /* background-image: url('https://webgradients.com/public/webgradients_png/070%20Aqua%20Splash.png'); */
+  color: black;
+  transform: rotateY(180deg);
+}
+
 
 /*  *****************************  JOURNEY   ***************************** */
 
@@ -366,13 +448,15 @@ p.info {
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
+  transform: scale(0.75);
+  margin-top: 0;
 }
 
 .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #05E5C8;
+  background-color: #3e6a88;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -383,7 +467,7 @@ p.info {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 42.8%;
+  width: 42.9%;
 }
 
 .container::after {
@@ -418,7 +502,7 @@ p.info {
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #3e6a88;
+  border-color: transparent transparent transparent rgba(42, 203, 187, 0.536);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -461,7 +545,7 @@ p.info {
 }
 
 .bold {
-  color:#05E5C8;
+  color:#3e6a88;
   font-weight: 800;
   /* font-family: 'Impact'; */
   letter-spacing: 0.5px;;
@@ -546,7 +630,7 @@ p.info {
 } */
 
 .my-journey {
-  height:1500px;
+  height:1000px;
   /* background-color: #fefbed; */
   background-color: white;
   /* background-color: purple; */
