@@ -278,6 +278,13 @@ h1 {
   flex-direction: row;
   width: 80%;
   margin:auto;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.all-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-pic {
@@ -290,8 +297,8 @@ h1 {
   height: 350px;
   width: 290px;
   transform: scale(0.9);
-  border-radius: 250px;
-  margin-top: 20px;
+  border-radius: 40px;
+  /* margin-top: 20px; */
   margin-right: 20px;
 }
 
@@ -307,8 +314,13 @@ h1 {
   margin-left: 30px;
   color: #3e6a88;
 
-  
-  
+
+}
+
+.intro {
+  font-size: 25px;
+
+
 }
 .about-me {
   display: flex;
@@ -403,7 +415,7 @@ h1 {
 
 
 .skill-box:hover {
-  transform: scale(1.19);
+  transform: scale(1.5);
   color: #05E5C8;
   color: #c1899c;
 
@@ -576,6 +588,7 @@ p.info {
   background-color: #05E5C8;
   /* background-image: url('https://webgradients.com/public/webgradients_png/070%20Aqua%20Splash.png'); */
   color: black;
+  border-radius: 20px;
   transform: rotateY(180deg);
 }
 
