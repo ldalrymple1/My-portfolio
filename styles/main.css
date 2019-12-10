@@ -73,9 +73,10 @@ ul:hover {
   align-content: center;
   flex-direction: column;
   /* border: 3px solid black; */
-  width: 60%;
+  /* width: 60%; */
   margin-top: 120px;
   margin-bottom: 0;
+  margin-right: 600px;
 
 }
 
@@ -140,29 +141,21 @@ h1 {
 /* +*************************** HOME ****************************************** */
 
 .home {
- height: 100vh;
- /* background-image: url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?ixlib=rb-1.2.1&w=1000&q=80'); */
- /* background-image: url('../assets/abstact.jpg'); */
- /* background-image: url('../assets/pink-black-and-yellow-abstract-painting-2911521.jpg'); */
- /* background-image: url('../assets/lightpink.jpg'); */
- /* background-image: url('../assets/darkblue.jpg'); */
- /* background-image: url('../assets/pinkblue.jpg'); */
- background-image: url('../assets/rotate_compressed2.jpg');
-
   height: 100vh;
+  background-image: url('../assets/rotate_compressed2.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
- background-repeat: no-repeat;
- background-size: cover;
- /* animation: pulse1 3s; */
- background-color: white;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* animation: pulse1 3s; */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 
 
   
@@ -254,16 +247,16 @@ h1 {
 
 @keyframes pulsing {
   0% {
-    transform: scale(0.6);
+    transform: scale(0.61);
   }
   50% {
-    transform: scale(0.66)
+    transform: scale(0.68)
   }
   80% {
-    transform: scale(0.67)
+    transform: scale(0.71)
   }
   90% {
-    transform: scale(0.65)
+    transform: scale(0.66)
   }
   100% {
     transform: scale(0.63)
@@ -274,7 +267,7 @@ h1 {
 
 /* *******************************      ABOUT       ********************************** */
 .about {
-  min-height: 950px;
+  min-height: 820px;
 
   /* background-color: green; */
 
@@ -285,7 +278,7 @@ h1 {
   flex-direction: row;
   width: 80%;
   margin:auto;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 60px;
 }
 
@@ -305,7 +298,7 @@ h1 {
   width: 270px;
   transform: scale(0.9);
   border-radius: 40px;
-  /* margin-top: 20px; */
+  margin-top: 80px;
   margin-right: 20px;
   padding: 8px;
   background: #3e6a88;
@@ -447,7 +440,7 @@ h1 {
 
 /* ***************************  PROJECTS  *************************************** */
 .projects {
-  height: 1800px;
+  min-height: 1800px;
   background-color:white;
   display: flex;
   flex-direction: column;
@@ -733,7 +726,7 @@ p.info {
   
   /* Full-width containers */
     .container {
-      width: 100%;
+      width: 95%;
       padding-left: 70px;
       padding-right: 25px;
     }
@@ -801,7 +794,7 @@ p.info {
 } */
 
 .my-journey {
-  height:1080px;
+  min-height:1080px;
   /* background-color: #fefbed; */
   background-color: white;
   /* background-color: purple; */
@@ -841,7 +834,7 @@ p.info {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 55%;
+  /* width: 55%; */
   margin: auto;
   color: black;
   justify-content: center;
@@ -900,28 +893,67 @@ p.info {
 }  */
 
 
-@media (max-width: 400px) { /* Change this to 400px, 800px for demo purpose */
+@media (max-width: 420px) { /* Change this to 400px, 800px for demo purpose */
   .blurb-wrapper {
     display: flex;
     flex-direction: column;
     max-width: 350px;
+    justify-content: center;
+    margin-top: 0;
   }
   .all-info {
     order: 2;
     max-width: 350px;
   }
 
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+  }
+
+  ul {
+    font-size: 3vw;
+    margin: 0;
+  }
+
+  
+
   .all-skills {
     max-width: 350px;
     min-height: 800px;
   }
 
-  .home {
-    min-width: 300px;
+  .box-for-text {
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .box-for-text {
-    max-width: 350px;
-    font-size: 5vw;
+ 
+
+  .box-for-text > h1 {
+    font-size: 18vw;
+    margin-left: 15px;
+  }
+
+  .typewriter {
+    width: 85%;
+  }
+
+  .typewriter > h3 {
+    font-size: 3.5vw;
+    /* margin-left: 6px; */
+
+  }
+
+
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-name {
+    margin-top: 15px;
   }
 }
