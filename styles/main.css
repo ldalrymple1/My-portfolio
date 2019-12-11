@@ -128,8 +128,9 @@ h1 {
 
 .typewriter.link > h3 {
   font-family: 'Montserrat';
-  color: black;
-  font-weight: 300;
+  color: #3e6a88;
+  text-shadow: none;
+  /* font-weight: 300; */
   overflow: hidden; 
   border-right: .15em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -957,5 +958,9 @@ p.info {
 
   .project-name {
     margin-top: 15px;
+  }
+
+  .home {
+    background-size:cover;
   }
 }
