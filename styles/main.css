@@ -106,7 +106,7 @@ h1 {
 }
 
 .typewriter {
-  width: 462px;
+  width: 565px;
   margin: auto;
   margin-top: 10px;
 }
@@ -114,8 +114,13 @@ h1 {
 .typewriter > h3 {
   font-family: 'Montserrat';
   color: white;
+  font-size: 23px;
   text-shadow: 2px 2px 2px black;
   font-weight: 300;
+  /* background: black;
+  background: #3e6a88;
+  /* background: #c1899c; */
+  /* background: white;  */
   overflow: hidden; 
   border-right: .15em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -132,11 +137,12 @@ h1 {
   text-shadow: none;
   /* font-weight: 300; */
   overflow: hidden; 
+  background: none;
   border-right: .15em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
    /* Adjust as needed */
-  animation: 
+   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
@@ -362,16 +368,27 @@ h1 {
 
 .skill-box {
   /* border: 0.5px solid #3e6a88 ; */
-  border-radius: 5px;;
+  /* border-radius: 5px;; */
   padding: 2px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: auto;
   margin: 7px;
   transition: all .1s ease-in-out;
   padding: 5px;
   color: #3e6a88;
+  border-bottom: 0.1px  solid #3e6a88;
+  text-align: center;
+  font-size: 30px;
   /* transform: scale(0.95); */
 
+}
+
+small {
+  font-size: 12px;
+  font-family: 'Montserrat';
+  margin-top: 10px;
 }
 
 /* .french {
@@ -409,8 +426,8 @@ h1 {
 }
 
 .flag {
-  height: 30px;
-  width: 50px;
+  height: 27px;
+  width: 47px;
   margin-top: 15px;
   -webkit-filter: grayscale(40%); 
   filter: grayscale(40%)
@@ -431,13 +448,16 @@ h1 {
 }
 
 .devicon-javascript-plain.lang {
-  font-size: 40px;
+  font-size: 32px;
   margin-top: 12px;
+  text-align: center;
 
 }
-.devicon-python-plain-wordmark.lang {
-  font-size: 44px;
+.devicon-python-plain.lang {
+  font-size: px;
   margin-top: 12px;
+  text-align: center;
+
 }
 
 
@@ -717,6 +737,7 @@ p.info {
   /* font-family: 'Impact'; */
   letter-spacing: 0.5px;;
   font-size: 18px;
+  color: #c1899c;
 }
 
 
