@@ -326,44 +326,13 @@ h1 {
   /* border: 2px solid pink; */
   color: #c1899c;
   /* color: #05E5C8; */
-
   justify-content: center;
   text-align: center;
   font-weight: 600;;
   /* margin-left: 30px; */
 
-
-
 }
 
-.profile-pic {
-  /* border: 4px solid #05E5C8; */
-  /* width: 30%; */
-  /* border-radius: 250px;; */
-  background: #3e6a88;
-  color: white;
-
-
-
-}
-
-
-
-.all-info {
-  background:#c1899c;
-  color: white;
-
-
-}
-
-.intro {
-  color: white;
-}
-
-.blurb {
-  color: white;
-
-}
 
 .pp {
   height: 350px;
@@ -377,8 +346,8 @@ h1 {
   background:#05E5C8;
   background:#c1899c;
 
-  
 }
+
 
 .blurb {
   font-size: 17px;
@@ -605,7 +574,7 @@ small {
 }
 
 .tech-icon.card {
-  font-size: 70px;
+  font-size: 55px;
   display: inline;
 }
 
